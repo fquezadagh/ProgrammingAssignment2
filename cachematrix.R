@@ -31,7 +31,7 @@ cacheSolve <- function(x=matrix(), ...) {
     message("getting inverse")
     return(invmat)
   }
-  matrix<-x$get()
+  matrix<-x$obtener()
   invmat<-solve(matrix,...)
   x$iniciarmat(invmat)
   invmat
