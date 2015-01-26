@@ -4,6 +4,7 @@
 ## Write a short comment describing this function
 ## This function get the given matrix (mat) and returns the inverse
 ##iniciar() set the values of the matrix
+##iniciarmat() set the values of the inverse matrix
 ##obtener() get the values of the matrix
 makeCacheMatrix <- function(x = matrix()) {
   ##My file
