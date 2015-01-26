@@ -8,7 +8,6 @@
 makeCacheMatrix <- function(x = matrix()) {
   ##My file
   invmat<-NULL
-
   iniciar<-function(y)
   {
     x<<-y
@@ -26,14 +25,14 @@ makeCacheMatrix <- function(x = matrix()) {
 
 cacheSolve <- function(x=matrix(), ...) {
         ## Return a matrix that is the inverse of 'x'
-  mat<-x$obtenermat()
-  if(!is.null(mat))
+  invmat<-x$obtenermat()
+  if(!is.null(invmat))
   {
     message("getting inverse")
-    return(mat)
+    return(invmat)
   }
   matrix<-x$get()
-  mat<-solve(matrix,...)
-  x$iniciarmat(mat)
-  mat
+  invmat<-solve(matrix,...)
+  x$iniciarmat(invmat)
+  invmat
 }
