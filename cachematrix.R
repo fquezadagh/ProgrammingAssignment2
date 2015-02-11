@@ -7,6 +7,7 @@
 ##obtener() gets the matrix to be inversed
 ##iniciarmat() solves the input matrix and inverses it, returning the inversed matrix
 ##obtenermat() get the inversed matrix
+
 makeCacheMatrix <- function(x = matrix()) {
   ##My file
   invmat<-NULL
